@@ -9,4 +9,14 @@ def calculatebmi(weight, height):
 
 a=float(input("enter your weight in lbs: "))
 b=float(input("enter your height in inches: "))
-print("your bmi is: " + str(round(calculatebmi(a, b), 1)))
+bmi=calculatebmi(a, b)
+print("your bmi is: " + str(round(bmi, 1)))
+
+if bmi > 30:
+    print("you are obese")
+elif bmi > 25: 
+    print("you are overweight")
+elif bmi > 18.5:
+    print("you are normal")
+else:
+    print("you are underweight")
